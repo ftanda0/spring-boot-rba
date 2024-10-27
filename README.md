@@ -71,7 +71,7 @@ Using Maven:
 
 bash
 mvn clean package
-Frontend
+### Frontend
 Navigate to Frontend Directory:
 
 bash
@@ -111,39 +111,39 @@ Access the Application:
 
 Open your browser and navigate to http://localhost:3000.
 
-Deployment
-Backend: Deployed on an AWS EC2 Linux instance.
-Frontend: Deployed on an AWS EC2 Windows instance.
-Kafka: Deployed on an AWS MSK cluster.
-Security
+## Deployment
+### Backend: Deployed on an AWS EC2 Linux instance.
+### Frontend: Deployed on an AWS EC2 Windows instance.
+### Kafka: Deployed on an AWS MSK cluster.
+### Security
 For simplicity, this project uses OAuth 2.0 for securing the backend services. In a production environment, it is recommended to use more robust security mechanisms such as AWS Vault or similar secrets management services.
 
-Frontend Security
+### Frontend Security
 The frontend application includes a mock login system. In a real-world scenario, proper authentication flows should be implemented, potentially leveraging services like Auth0. Currently, the login is simulated within the frontend, and the token is used to access protected resources.
 
-Backend Security
+### Backend Security
 The backend is secured using OAuth 2.0. All API endpoints require a valid JWT token, except for the /api/v1/get-token endpoint which is publicly accessible for obtaining tokens. In a real-world environment, a dedicated security microservice should handle authentication and authorization.
 
-Kafka Topics
+### Kafka Topics
 Two Kafka topics are created for managing card statuses:
 
-card_status
+#### card_status
 
-Purpose: Receives messages for card creation requests.
-Usage: Each card creation request is sent as a message to this topic.
-Consumer: In a real environment, a consumer would listen to this topic to process card creation.
-card_status_updates
+##### Purpose: Receives messages for card creation requests.
+##### Usage: Each card creation request is sent as a message to this topic.
+##### Consumer: In a real environment, a consumer would listen to this topic to process card creation.
+#### card_status_updates
 
-Purpose: Receives updates on the status of card requests.
-Usage: After processing a card request (approval or rejection), a message is sent to this topic.
-Consumer: The backend application subscribes to this topic to update the card status in the database accordingly.
-Simulator
+##### Purpose: Receives updates on the status of card requests.
+##### Usage: After processing a card request (approval or rejection), a message is sent to this topic.
+##### Consumer: The backend application subscribes to this topic to update the card status in the database accordingly.
+##### Simulator
 A simulator is included to mimic the behavior of the card processing system. You can send status updates by accessing the following endpoint:
 
 {{url}}/simulate/status-update?oib=54545182222&status=REJECTED
 This will send a message to the card_status_updates topic, allowing you to test the application's response to status changes.
 
-Configuration
+## Configuration
 All configurations are managed via the application-prod.properties file.
 
 
