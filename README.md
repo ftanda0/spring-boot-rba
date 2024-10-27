@@ -1,5 +1,3 @@
-Here's the revised README with the correct Markdown syntax, improved structure, and adjusted formatting:
-
 # CardApp
 
 Welcome, travelers! 🎉
@@ -26,6 +24,7 @@ Welcome, travelers! 🎉
 
 The project is organized into several packages to maintain a clean and manageable codebase:
 
+```plaintext
 rba.it.CardApp
 │
 ├── configuration
