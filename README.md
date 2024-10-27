@@ -49,6 +49,8 @@ Additionally, the project includes separate directories for unit tests to ensure
 - **Security:** OAuth 2.0
 - **Deployment:** AWS EC2 (Linux and Windows instances)
 
+
+
 ## Prerequisites
 
 Before setting up the project locally or deploying it, ensure you have the following installed:
