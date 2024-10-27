@@ -1,6 +1,5 @@
 Here's the revised README with the correct Markdown syntax, improved structure, and adjusted formatting:
 
-```markdown
 # CardApp
 
 Welcome, travelers! 🎉
@@ -27,7 +26,6 @@ Welcome, travelers! 🎉
 
 The project is organized into several packages to maintain a clean and manageable codebase:
 
-```plaintext
 rba.it.CardApp
 │
 ├── configuration
@@ -38,7 +36,7 @@ rba.it.CardApp
 ├── repository
 ├── service
 └── simulator
-```
+
 
 Additionally, the project includes separate directories for unit tests to ensure code reliability and maintainability.
 
@@ -112,7 +110,7 @@ Before setting up the project locally or deploying it, ensure you have the follo
 
 ## Security
 
-For simplicity, this project uses OAuth 2.0 for securing backend services. In a production environment, it's recommended to use more robust security mechanisms, such as AWS Vault or similar secrets management services.
+For simplicity, this project uses OAuth 2.0 for securing backend services. In a production environment, I would recommended to use more robust security mechanisms, such as AWS Vault or similar secrets management services.
 
 ### Frontend Security
 
@@ -149,10 +147,3 @@ This will send a message to the `card_status_updates` topic, allowing you to tes
 ## Configuration
 
 > Note: In real-world applications, sensitive information such as database credentials and OAuth secrets would be managed using secure methods like AWS Secrets Manager or Vault.
-
-## License
-
-This project is licensed under the MIT License.
-```
-
-This README file is now properly structured with correct headings, bullet points, and code blocks for easy readability and integration into Git. Let me know if you need further adjustments.
