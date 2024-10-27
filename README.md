@@ -59,7 +59,7 @@ Before setting up the project locally or deploying it, ensure you have the follo
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/CardApp.git
+   git clone https://github.com/ftanda0/spring-boot-rba.git
    cd CardApp
 Configure Application Properties:
 
