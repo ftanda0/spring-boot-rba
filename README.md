@@ -35,7 +35,7 @@ rba.it.CardApp
 ├── repository
 ├── service
 └── simulator
-
+```
 
 Additionally, the project includes separate directories for unit tests to ensure code reliability and maintainability.
 
