@@ -18,7 +18,6 @@ Welcome, travelers! 🎉
 - [Kafka Topics](#kafka-topics)
   - [Simulator](#simulator)
 - [Configuration](#configuration)
-- [License](#license)
 
 ## Project Structure
 
